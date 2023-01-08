@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .column {
+  border: 1px solid;
+  width: 30%;
+  margin: 10px;
+}
+
+.droppable-col {
+  width: 100%;
+  background-color: whitesmoke;
+  padding: 10px 10px 0 10px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  margin-bottom: 10px;
+  background-color: whitesmoke;
+  color: black;
+  border: 1px solid rgb(170, 170, 170);
+  padding: 1.2rem;
+  border-radius: 4px;
+}
+
+.item.dragging {
+  background-color: rgb(182, 180, 180);
+}
+
+.title {
+  margin: 15px 15px 0 15px;
+  font-size: 12px;
+}
+
+.title-text {
+  border: 1px solid;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.title-month {
+  margin-top: 1rem;
+}
+
+.title-roadmap {
+  text-align: left;
+  margin: 20px;
+}
+
+.wrap {
+  position: relative;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.a-center {
+  align-items: center;
+}
+
+.progress {
+  width: 30%;
+  padding: 10px 20px 5px 15px;
+}
+.bar {
+  width: 20%;
+  padding: 10px 20px 5px 15px;
+  text-align: left;
+}
