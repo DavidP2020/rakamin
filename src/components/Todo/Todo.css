@@ -11,7 +11,7 @@
 
 .container .column {
   border: 1px solid;
-  width: 30%;
+  width: 23%;
   margin: 10px;
 }
 
@@ -76,4 +76,26 @@
   width: 20%;
   padding: 10px 20px 5px 15px;
   text-align: left;
+}
+
+.icon {
+  margin: 10px;
+}
+
+.btnElipsis {
+  border: none;
+}
+
+.icon-green {
+  color: green;
+  margin-top: 0.4rem;
+}
+
+.icon-elip {
+  font-size: 15px;
+  margin-top: 0.4rem;
+}
+
+label {
+  font-size: 12px;
 }
