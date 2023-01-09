@@ -2,7 +2,7 @@ import { Box, Button, TextField } from "@mui/material";
 import axios from "axios";
 import React, { useState } from "react";
 
-const CreateTodo = ({ handleClose, ...props }) => {
+const CreateTodo = ({ handleClose, fetchTodo, ...props }) => {
   const [newTodo, setNewTodo] = useState({
     title: "",
     description: "",
@@ -29,7 +29,8 @@ const CreateTodo = ({ handleClose, ...props }) => {
         newTodo,
         config
       );
-      //   handleClose();
+      fetchTodo();
+      handleClose();
     } catch (err) {
       alert(err.message);
     }

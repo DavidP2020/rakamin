@@ -124,7 +124,7 @@ const Todo = () => {
                   ></i>
                 </Toolbar>
                 <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-                  <CreateTodo handleClose={handleClose} />
+                  <CreateTodo handleClose={handleClose} fetchTodo={fetchTodo} />
                 </Typography>
               </Box>
             </Fade>
